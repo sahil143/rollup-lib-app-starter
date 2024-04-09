@@ -2,7 +2,6 @@
   "name": "web-app",
   "version": "0.0.1",
   "description": "This is an example app for lib",
-  "main": "index.ts",
   "author": "sahil143",
   "license": "MIT",
   "private": false,
