@@ -10,6 +10,16 @@
   "author": "sahil143",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "prepare": "husky",
+    "build:web": "cd ./web && yarn build",
+    "start:web": "cd ./web && yarn start",
+    "install:web": "cd ./web && yarn install --no-lockfile",
+    "build": "rm -rf dist && rollup -c",
+    "dev": "rm -rf dist && rollup -c --watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --color",
+    "test": "jest"
+  },
   "devDependencies": {
     "@babel/core": "^7.24.4",
     "@babel/preset-env": "^7.24.4",
@@ -39,15 +49,6 @@
     "tslib": "^2.6.2",
     "typescript": "^5.4.4",
     "typescript-eslint": "^7.5.0"
-  },
-  "scripts": {
-    "prepare": "husky",
-    "start:web": "cd ./web && yarn start",
-    "install:web": "cd ./web && yarn install --no-lockfile",
-    "rollup": "rollup -c",
-    "build": "rm -rf dist && rollup -c",
-    "dev": "rm -rf dist && rollup -c --watch",
-    "test": "jest"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
