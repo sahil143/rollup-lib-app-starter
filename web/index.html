@@ -1,17 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rollup Starter app</title>
+    <link rel="stylesheet" href="./retro.css" />
 </head>
 
 <body>
-    <div style="margin-right: auto;">
-        <h1>Hello, World</h1>
-        <p>This app is bundled using Rollup</p>
-    </div>
+    <h1 id="rollup-lib-app-starter">Rollup Lib App Starter</h1>
+    <p>
+        This is a starter app template that can be used as a base for building new libraries. This
+        template also has a example app in <code>web</code> folder.
+    </p>
+    <h2 id="getting-started">Getting Started</h2>
+    <p>To get started, clone the repository and install the dependencies:</p>
+    <pre>
+        <code class="language-bash">
+            git clone https://github.com/your-username/rollup-lib-app-starter.git
+            cd rollup-lib-app-starter
+            yarn install
+            yarn install:web
+        </code>
+    </pre>
+    <h2 id="available-commands">Available Commands</h2>
+    <p>Build library</p>
+    <pre>
+        <code>yarn build</code>
+    </pre>
+    <p>Build library in watch mode</p>
+    <pre>
+        <code>yarn dev</code>
+    </pre>
+    <p>Installs the dependencies for the web example</p>
+    <pre>
+        <code>yarn install:web</code>
+    </pre>
+    <p>Starts the Parcel development server for the web example</p>
+    <pre>
+        <code>yarn start:web</code>
+    </pre>
+    <p>Run unit tests</p>
+    <pre>
+        <code>yarn test</code>
+    </pre>
+    <p>Run linter</p>
+    <pre>
+        <code>yarn lint</code>
+    </pre>
+    <h2 id="build-with">Build with</h2>
+    <ul>
+        <li>
+            <strong>Build Tools</strong>: The project uses
+            <a href="https://rollupjs.org/">Rollup</a> for building the library and
+            <a href="https://parceljs.org/">Parcel</a> for the web example.
+        </li>
+        <li>
+            <strong>Testing</strong>: Unit tests are set up using
+            <a href="https://jestjs.io/">Jest</a> and
+            <a href="https://testing-library.com/">@testing-library</a>.
+        </li>
+        <li>
+            <strong>Code Styling and Formatting</strong>: <a href="https://eslint.org/">ESLint</a> and
+            <a href="https://prettier.io/">Prettier</a> are set up for code styling and formatting.
+        </li>
+        <li>
+            <strong>DevContainer</strong>: A
+            <a href="https://code.visualstudio.com/docs/remote/containers">devcontainer</a> is set up
+            for consistent development environments.
+        </li>
+        <li>
+            <strong>Git Hooks</strong>: <a href="https://typicode.github.io/husky/">Husky</a> and
+            <a href="https://github.com/okonet/lint-staged">lint-staged</a> are used to enforce code
+            styling and formatting on commit.
+        </li>
+    </ul>
+    <h2 id="folder-structure">Folder Structure</h2>
+    <ul>
+        <li>
+            <strong>Library Development</strong>: The <code>src</code> directory is used for building
+            the library, which can be published as a standalone package.
+        </li>
+        <li>
+            <strong>Web Example</strong>: The <code>web</code> directory contains an example web
+            application that demonstrates the usage of the library.
+        </li>
+    </ul>
+    <h3 id="devcontainer">DevContainer</h3>
+    <p>
+        This project includes a devcontainer configuration for Visual Studio Code. To use the
+        devcontainer, open the project in Visual Studio Code and click the &quot;Reopen in
+        Container&quot; button when prompted.
+    </p>
+    <h3 id="git-hooks">Git Hooks</h3>
+    <p>
+        This project uses Husky and lint-staged to enforce code styling and formatting on commit. When
+        you commit changes, the linter and Prettier will automatically run, and the commit will be
+        rejected if there are any issues.
+    </p>
 </body>
 
 </html>
