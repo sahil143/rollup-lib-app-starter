@@ -7,7 +7,7 @@
   "private": false,
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url ./"
   },
   "devDependencies": {
     "parcel": "^2.12.0",
