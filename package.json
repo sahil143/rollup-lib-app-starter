@@ -17,7 +17,7 @@
     "install:web": "cd ./web && yarn install --no-lockfile",
     "build": "rm -rf dist && rollup -c",
     "dev": "rm -rf dist && rollup -c --watch",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --color",
+    "lint": "eslint .",
     "test": "jest"
   },
   "devDependencies": {
@@ -51,6 +51,6 @@
     "typescript-eslint": "^7.5.0"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "*.{ts,tsx,js,mjs,jsx}": ["prettier --write", "eslint"]
   }
 }
