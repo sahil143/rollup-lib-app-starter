@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "The starter lib and app combo created using rollup",
   "source": "src/index.ts",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "type": "module",
   "repository": "https://github.com/sahil143/rollup-lib-app-starter",
